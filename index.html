@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikola Popovic - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark-theme">
+    <div id="progress"></div>
+    <header id="intro">
+      <h1 id="hello">HELLO</h1>
+      <div class="content">
+        <h2 id="welcome" class="title">
+          Welcome to my Portfolio
+          <div class="aurora">
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+          </div>
+        </h2>
+      </div>
+    </header>
+
+    <h3 id="choose-theme">Please choose the theme</h3>
+    <div class="radio-theme">
+      <label
+        >Dark
+        <input type="radio" name="radio-theme-group" id="dark-theme" />
+        <span></span>
+      </label>
+      <label
+        >Light
+        <input type="radio" name="radio-theme-group" id="light-theme" />
+        <span></span>
+      </label>
+      <label
+        >Boho
+        <input type="radio" name="radio-theme-group" id="boho-theme" />
+        <span></span>
+      </label>
+      <label
+        >Gradient
+        <input type="radio" name="radio-theme-group" id="gradient-theme" />
+        <span></span>
+      </label>
+    </div>
+
+    <div id="main-content" class="hidden">
+      <nav id="navigation-bar">
+        <div class="hamburger-menu">
+          <button class="hamburger-button">☰</button>
+        </div>
+        <ul class="navigation">
+          <li><a href="#about" title="About" id="btn-about">About</a></li>
+          <li>
+            <button type="button" id="btn-projects">
+              Projects
+              <svg
+                aria-hidden="true"
+                height="16"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="16"
+              >
+                <path
+                  d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"
+                ></path>
+              </svg>
+            </button>
+            <div class="dropdown__wrapper">
+              <div class="dropdown">
+                <ul class="list-items-with-description">
+                  <li>
+                    <div class="item-title">
+                      <h3>
+                        <a
+                          href="#html-css-js"
+                          title="HTML CSS JS"
+                          id="btn-html-css-js"
+                          >HTML CSS JS</a
+                        >
+                      </h3>
+                      <p>Videos and websites</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-title">
+                      <h3>
+                        <a href="#python" title="Python" id="btn-python"
+                          >Python</a
+                        >
+                      </h3>
+                      <p>Videos and GitHubs</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-title">
+                      <h3>
+                        <a href="#webflow" title="Webflow" id="btn-webflow"
+                          >Webflow</a
+                        >
+                      </h3>
+                      <p>Videos and websites</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-title">
+                      <h3>
+                        <a href="#android" title="Android" id="btn-android"
+                          >Android</a
+                        >
+                      </h3>
+                      <p>Videos and Play Store</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-title">
+                      <h3>
+                        <a href="#ux-ui" title="UX-UI" id="btn-ux-ui">UX/UI</a>
+                      </h3>
+                      <p>Images and videos</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#useful-links" title="Useful Links" id="btn-useful-links"
+              >Useful links</a
+            >
+          </li>
+          <li>
+            <a href="#contact" title="Contact" id="btn-contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--<hr class="section-divider">-->
+
+      <section class="about" id="about">
+        <div class="image">
+          <img src="./images/Nikola.png" alt="Nikola Popovic" />
+        </div>
+        <div class="data">
+          <h2>Who is Nikola?</h2>
+          <p>
+            I'm a graduated Chemical Engineer with a strong passion for
+            <span class="bold">web development and Android applications</span>.
+          </p>
+          <p>
+            My diverse background has equipped me with a unique blend of
+            analytical skills and creative problem-solving abilities.
+          </p>
+          <p>
+            I'm proficient in
+            <span class="bold"
+              >Figma, Canva, HTML, CSS, JavaScript, React, SQL, Python, Django,
+              Webflow...</span
+            >
+            I'm always eager to learn and embrace new technologies.
+          </p>
+          <p>
+            I'm open to all kinds of cooperation and look forward to
+            contributing to innovative projects that make a difference.
+          </p>
+          <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+        </div>
+      </section>
+
+      <section class="HTML-CSS-JS" id="html-css-js">
+        <h2>My works HTML CSS JS</h2>
+        <main>
+          <div class="carousel-container">
+            <button class="carousel-button left" aria-label="Scroll left">
+              ◄
+            </button>
+            <div class="carousel">
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video src="./videos/Word_counter.mp4" controls></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/Word_counter/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Word counter</a
+                  >
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video src="./videos/Unit_converter.mp4" controls></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/Unit_converter/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Unit converter</a
+                  >
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video src="./videos/QRCode_generator.mp4" controls></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/QRCode-generator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >QR Code generator</a
+                  >
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video src="./videos/QRCode_reader.mp4" controls></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/QRCode-reader/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >QR Code reader</a
+                  >
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video src="./videos/Quiz.mp4" controls></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/Quiz-application/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Quiz application</a
+                  >
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video
+                      src="./videos/Game_bigger_or_lower.mp4"
+                      controls
+                    ></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/Site_bigger_or_lower_number/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Simple game bigger or lower</a
+                  >
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <article data-glow>
+                  <div data-glow></div>
+                  <figure>
+                    <video
+                      src="./videos/Password strength estimator and generator.mp4"
+                      controls
+                    ></video>
+                  </figure>
+                </article>
+                <h3>
+                  <a
+                    href="https://nikolapopovic71.github.io/Password_strength_estimator_and_generator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Password strength estimator and generator</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <button class="carousel-button right" aria-label="Scroll right">
+              ►
+            </button>
+          </div>
+          <div class="carousel-dots"></div>
+        </main>
+
+        <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+      </section>
+
+      <section id="python">
+        <h2>My works Python</h2>
+        <main>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+        </main>
+        <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+      </section>
+
+      <section class="Webflow" id="webflow">
+        <h2>My works Webflow</h2>
+        <main>
+          <article data-glow>
+            <div data-glow></div>
+            <h3>
+              <a
+                href="https://nikolas-amazing-site-50e57e.webflow.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nikolas amazing site</a
+              >
+            </h3>
+          </article>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+        </main>
+        <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+      </section>
+
+      <section class="Android" id="android">
+        <h2>My works Android app</h2>
+        <main>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+        </main>
+        <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+      </section>
+
+      <section class="UX-UI" id="ux-ui">
+        <h2>My works UX/UI</h2>
+        <main>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+          <article data-glow>
+            <div data-glow></div>
+          </article>
+        </main>
+        <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+      </section>
+
+      <section class="useful-links" id="useful-links">
+        <h2>Useful links</h2>
+        <div class="dropdown-container-wrapper">
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Honest recommendation</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://roadmap.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Developer roadmap</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://overapi.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Over API</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://caniuse.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Can I use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.freecodecamp.org/news/front-end-developer-roadmap/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free Code Camp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://freefrontend.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free frontend</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://toolsweekly.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Web Tools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tinywow.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Web tools by Tiny Wow</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://thegoodlineheight.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >For line height</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.virustotal.com/gui/home/upload"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Analyze suspicious files...</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://free-for.dev/#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free for dev</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.cssportal.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Portal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Personal</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://markodenic.com/blog/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Marko Denic - blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://shefali.dev/blog/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Shefali - blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cssnippets.shefali.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Shefali - cssnippets</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ishadeed.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ahmad Shadeed</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ryanmulligan.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ryan Mulligan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://bennettfeely.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bennett Feely</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Fonts</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://fonts.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fonts.bunny.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bunny</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.fontspace.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Font space</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.1001fonts.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >1001</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.fontsquirrel.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Font squirrel</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fontawesome.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Font awesome</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Icons</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://fonts.google.com/icons"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mingcute.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >MingCute</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://css.gg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://iconhub.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >IconHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://iconic.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Iconic</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://basicons.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >BasicIcons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tablericons.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >TablerIcons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://simpleicons.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >SimpleIcons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://remixicon.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Remix</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://iconmonstr.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >IconMonstr</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://icons8.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Icons8</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tabler.io/icons"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tabler</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://hugeicons.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >HugeIcons</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Illustrations</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://storyset.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Story set</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.vector4free.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Vector4free</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://bypeople.com/illustrations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >By People</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://all-free-download.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >All free download</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://undraw.co/illustrations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Undraw</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.drawkit.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Draw Kit</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://icons8.com/illustrations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Icons8</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://iradesign.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ira Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blush.design/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blush</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://humaaans.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Humaaans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.glazestock.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Glaze</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://weareskribbl.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Skribbl</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://opendoodles.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open doodles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Colors</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.colorsandfonts.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Colors and fonts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://mycolor.space/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >My color</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://coolors.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Coolors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://colorhunt.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Color hunt</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.colorhub.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Color hub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.htmlcsscolor.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Html Css color</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Photos</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.pexels.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pexels</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://unsplash.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.storyblocks.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Story blocks</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://pixabay.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pixabay</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.shutterstock.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Shutter stock</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://in.pinterest.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pinterest</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.istockphoto.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >I stock photo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kaboompics.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Kaboom pics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://flickr.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Flickr</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.freepik.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Freepik</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.shopify.com/stock-photos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Shopify stock photos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Education</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.freecodecamp.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free Code Camp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >W3 Schools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.codecademy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Codecademy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://javascript30.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Java Script 30 days</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.frontendmentor.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Frontend Mentor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://webreference.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Web reference</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://quirksmode.org/css/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Quirks mode/ CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://css-tricks.com/snippets/css/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Tricks</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.css3.info/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS 3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.techgeekbuzz.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tech Geek Buzz</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sololearn.com/en/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Solo learn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.khanacademy.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Khan Academy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Coursera</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Udemy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Freelancing platform</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.upwork.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Upwork</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.fiverr.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Fiverr</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.toptal.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Toptal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.freelancer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Freelancer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.peopleperhour.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >People per hour</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.simplyhired.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Simply hired</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://elements.envato.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Envato elements</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.guru.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Guru</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://6nomads.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >6 nomads</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://gumroad.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gumroad</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Remote jobs</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://workremote.cc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Work remote</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.flexjobs.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Flex jobs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://remoteok.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Remote Ok</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://justremote.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Just remote</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://jobspresso.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Jobspresso</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://jobboardsearch.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Job board search</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://weworkremotely.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >We work remotely</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://remote.co/remote-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Remote jobs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">You Tube channels</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.youtube.com/@TraversyMedia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Traversy Media</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@freecodecamp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free Code Camp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@NetNinja"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >The Net Ninja</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@academind"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Academind</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@WebDevSimplified"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Web Dev Simplified</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Free hosting</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Netlify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://firebase.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Firebase Google</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://pages.github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Git Hub Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vercel.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Vercel</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://surge.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Surge</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://render.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Render</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.gitlab.com/ee/user/project/pages/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Git Lab Pages</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Design inspiration</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://collectui.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Collect UI</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://landings.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Landings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.awwwards.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Awwwards</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.behance.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Behance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://dribbble.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Dribbble</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sketchappsources.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Sketch App Sources</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">E-mail addresses</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.godaddy.com/en-ie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Go Daddy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.zoho.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Zoho</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://workspace.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Work Space Google</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">CSS Animations</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://animate.style/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Animate Style</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://animista.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Animista</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://animejs.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Anime JS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://gsap.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GSAP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ianlunn.github.io/Hover/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ian Lunn - Hover</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://anijs.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ani JS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kristofferandreasen.github.io/wickedCSS/#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Kristoffer Andreasen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://mojs.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Mo JS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://loading.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Loading</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">CSS generators</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://cssgenerator.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Generator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cssgradient.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Gradient</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://larsenwork.com/easing-gradients/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Larsenwork - gradients</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://keyframes.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Key Frames</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.shadergradient.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Shader Gradient</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://angrytools.com/css-flex/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS flex</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://code-magic.favour.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code Magic</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Git Hub</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://github.com/markodenic/web-development-resources"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Marko Denic</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/EbookFoundation/free-programming-books"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free programming books</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/bradtraversy/design-resources-for-developers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Design resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ripienaar/free-for-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free for dev</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/kamranahmedse/developer-roadmap"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Dev roadmap</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Resources for students</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">Learn Python</a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=rfscVS0vtbw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Free Code Camp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cs50.harvard.edu/python/2022/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Harvard</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@coreyms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Corey Schafer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/practical-tutorials/project-based-learning#python"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project based learning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=_uQrJ0TkZlc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Programming with Mosh</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://learnpython.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Learn Python</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">CSS GitHub learning </a>
+            <ul class="dropdown__list">
+              <li>
+                <a
+                  href="https://github.com/micromata/awesome-css-learning"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Awesome CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/l-hammer/You-need-to-know-css"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Need to know</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jgthms/css-reference"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS reference</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/adamschwartz/magic-of-css"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Magic of CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jareware/css-architecture"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS architecture</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/dropbox/css-style-guide"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS style guide</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AllThingsSmitty/css-protips"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS pro tips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/samanthaming/Flexbox30"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Flexbox 30</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__container">
+            <a href="#" class="dropdown__title">AI</a>
+            <ul class="dropdown__list">
+              <li>
+                <a href="https://hdrobots.com/?_categories=code"
+                  >Find AI tools</a
+                >
+              </li>
+              <li><a href="https://stockimg.ai/">Stock img AI</a></li>
+              <li><a href="https://you.com/">AI assistant</a></li>
+              <li><a href="https://creatie.ai/">Design with ai</a></li>
+              <li>
+                <a href="https://landingsite.ai/"
+                  >Landing site create website</a
+                >
+              </li>
+              <li><a href="https://10web.io/">10 Web create website</a></li>
+              <li>
+                <a href="https://www.framer.com/">Framer create website</a>
+              </li>
+              <li><a href="https://wegic.ai/">Wegic create website</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="scroll-up" aria-label="Scroll to nav">↑</button>
+      </section>
+
+      <footer class="contact" id="contact">
+        <div class="footer-content">
+          <p class="copy-text">&copy; <b id="date"></b> PONITECH</p>
+          <p class="email-text">
+            E-mail:
+            <a href="mailto:nikolap.itech@gmail.com" class="email-link"
+              >nikolap.itech@gmail.com</a
+            >
+          </p>
+          <div class="social-wrapper">
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://github.com/NikolaPopovic71"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub"
+                >
+                  <div id="github-icon-container">
+                    <img
+                      src="images/github_line.svg"
+                      alt="GitHub"
+                      width="24"
+                      height="24"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/NikolaP_itech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="X"
+                >
+                  <div id="twitter-icon-container">
+                    <img
+                      src="images/social_x_line.svg"
+                      alt="X"
+                      width="24"
+                      height="24"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
